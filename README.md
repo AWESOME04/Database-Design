@@ -1,6 +1,9 @@
 # Database-Design
 This repository contains resources and codes for my college coursework in Databases and PostgreSQL
 
+![0712-Bad_Practices_in_Database_Design_-_Are_You_Making_These_Mistakes_Dan_Social-754bc73011e057dc76e55a44a954e0c3](https://user-images.githubusercontent.com/102630199/226671376-8b7adf11-4b0b-49c6-87e9-06fa56f32608.png)
+
+
 Contents
 
     /notes: This directory contains notes and reference materials related to the course, including lecture slides, textbooks, and other relevant documents.
