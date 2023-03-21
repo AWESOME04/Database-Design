@@ -1,0 +1,122 @@
+    Features of the proposed system
+    The proposed system would provide the following features:
+
+    Security measures, such as user authentication and authorization.
+
+    A user-friendly interface for easy navigation and use.
+
+    Quick and efficient retrieval of stored data.
+
+    Automated calculations for commission and dues, eliminating the need for manual calculations.
+
+    Descriptive reports for management decision-making.
+
+    Branch-wise access for managers and agents to manage their own data.
+
+    Automated policy registration for customers.
+
+    Notifications for customers regarding policy renewals, payment dues, and claims.
+
+    An online payment system for easy payment of premiums.
+
+    Technology used for the proposed system
+    The proposed system would be developed using a web-based application using PHP, MySQL, and HTML. PHP would be used to create the server-side logic and MySQL for the database management. HTML would be used to create the front-end interface.
+
+    Conclusion
+    The Insurance Management System project aims to create an online application that automates the work procedures of an insurance company/agency. The proposed system would provide a secure, user-friendly, and efficient database system for the management, agents, and customers of the agency. It would eliminate the need for manual calculations, reduce paperwork, and provide quick access to stored data. By automating the system, the proposed system would increase productivity and reduce the chances of errors.
+
+
+
+
+
+
+The diagram shows the main entities in the system and their relationships. The Customer table is connected to the Auto, Homeowners, Renters, and Life Ins tables with a one-to-many relationship, indicating that a customer can have multiple policies. The Agents table is linked to the Customers and Managers tables with a one-to-many relationship, showing that an agent can serve multiple customers, and a manager can oversee multiple agents. Finally, the Managers table is related to the Branches table with a one-to-many relationship, indicating that a branch can have multiple managers.
+
+
+
+
+     +-----------------+          +-----------------+
+     |      Customer   |          |      Auto       |
+     +-----------------+          +-----------------+
+     | ID              |          | Auto Policy No.  |
+     | Last Name       |       /--| Customer ID      |
+     | First Name      |      /   | Make            |
+     | Address         |     /    | Model           |
+     | City            |    /     | Year            |
+     | State           |   /      | Liability Amt.  |
+     | Zip             |  /       | UM              |
+     | Phone           | /        | UIM             |
+     | Credit Card No. |/         | Med Pay         |
+     | Exp. Date       |          | Premium Amt.    |
+     | Multi Policy %  |          | Collision Dam.  |
+     | DOB             |          | Named Insured   |
+     +-----------------+          | Additional Dr.  |
+                                  +-----------------+
+                                          |
+                                          |
+                                          v
+                                  +-----------------+
+                                  |   Homeowners    |
+                                  +-----------------+
+                                  | Homeowners Pol. |
+                                  | Customer ID     |
+                                  | Liability Amt.  |
+                                  | Prop. Dam. Amt. |
+                                  | Premium Amt.    |
+                                  +-----------------+
+                                          |
+                                          |
+                                          v
+                                  +-----------------+
+                                  |     Renters     |
+                                  +-----------------+
+                                  | Renters Pol. No.|
+                                  | Customer ID     |
+                                  | Liability Amt.  |
+                                  | Prop. Dam. Amt. |
+                                  | Premium Amt.    |
+                                  +-----------------+
+                                          |
+                                          |
+                                          v
+                                  +-----------------+
+                                  |    Life Ins     |
+                                  +-----------------+
+                                  | Life Ins Pol. No.|
+                                  | Customer ID     |
+                                  | Premium Amt.    |
+                                  | Benefit Amt.    |
+                                  | Beneficiary     |
+                                  +-----------------+
+                                          |
+                                          |
+                 +------------------------+------------------------+
+                 |                                                |
+                 v                                                v
+          +-----------+                                    +-----------+
+          |   Agents  |                                    |  Managers |
+          +-----------+                                    +-----------+
+          | Agent ID  |                                    | Manager ID|
+          | First Name|                                    | First Name|
+          | Last Name |                                    | Last Name |
+          | Address   |                                    | Email     |
+          | Phone     |                                    | Phone     |
+          | Email     |                                    | Branch ID |
+          | Manager ID|                                    +-----------+
+          +-----------+
+                 |
+                 |
+                 v
+          +-----------+
+          |  Branches |
+          +-----------+
+          | Branch ID |
+          | Address   |
+          | City      |
+          | State     |
+          | Zip       |
+          | Phone     |
+          +-----------+
+
+
+
